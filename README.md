@@ -25,4 +25,8 @@ The build-in test discovery of the python module is quite flaky at this time. Op
 }
 ```
 
+# Authors
+[Nicolaj Kirchhof](https://github.com/nicolajkirchhof)
 
+---
+[docoyo 2017](www.docoyo.com)
