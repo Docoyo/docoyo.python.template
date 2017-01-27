@@ -1,0 +1,59 @@
+{
+  "version": "0.2.0",
+  "configurations": [{
+      "name": "Python",
+      "type": "python",
+      "request": "launch",
+      "stopOnEntry": true,
+      "pythonPath": "${config.python.pythonPath}",
+      "program": "${file}",
+      "cwd": "${workspaceRoot}",
+      "debugOptions": [
+        "WaitOnAbnormalExit",
+        "WaitOnNormalExit",
+        "RedirectOutput"
+      ]
+    },
+    {
+      "name": "Python myModule with special config",
+      "type": "python",
+      "request": "launch",
+      "stopOnEntry": true,
+      "pythonPath": "${config.python.pythonPath}",
+      "program": "",
+      "module": "my_module",
+
+      // UNCOMMENT if you like to use other execution environments
+      // "console": "integratedTerminal",
+      // "console": "externalTerminal",
+      "args": [
+        "--configfile",
+        "config/config-default.json",
+        "config/config-user.json",
+        "--verbose"
+      ],
+      "cwd": "${workspaceRoot}/src",
+      "debugOptions": [
+        "WaitOnAbnormalExit",
+        "WaitOnNormalExit",
+        "RedirectOutput"
+      ]
+    },
+    {
+      "name": "Python test",
+      "type": "python",
+      "request": "launch",
+      "stopOnEntry": true,
+      "pythonPath": "${config.python.pythonPath}",
+      "program": "",
+      "module": "test.${fileBasenameNoExtension}",
+      "args": [],
+      "cwd": "${workspaceRoot}/src",
+      "debugOptions": [
+        "WaitOnAbnormalExit",
+        "WaitOnNormalExit",
+        "RedirectOutput"
+      ]
+    }
+  ]
+}

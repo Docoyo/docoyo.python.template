@@ -1,0 +1,9 @@
+{
+  "python.unitTest.unittestArgs": [
+    "-v",
+    "-s ./src/"
+  ],
+  "python.unitTest.unittestEnabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.formatting.provider": "yapf"
+}

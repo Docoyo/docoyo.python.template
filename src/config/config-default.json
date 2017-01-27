@@ -1,0 +1,6 @@
+{
+  "max-cache-size": 100,
+  "logsize-bytes": 20000000,
+  "num-log-bakups": 5,
+  "logpath": "defaultLog.log"
+}
